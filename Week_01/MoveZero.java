@@ -7,10 +7,11 @@
 // You must do this in-place without making a copy of the array.
 // Minimize the total number of operations.
 
-
+// 其实优化的地方就是#1处。它避免了数组开头是非零元素的交换也就是阻止（i==j）时交换。
+// 当i > j 时，只需要把 i 的值赋值给j 并把原位置的值置0。同时这里也把交换操作换成了赋值操作，减少了一条操作语句，理论上能更节省时间。
+// Option 1: two pointer
 class Solution {
-    public void moveZeroes(int[] nums) {
-       
+    public void moveZeroes(int[] nums) {  
         if (nums == null || nums.length == 0){
             return ;
         }
@@ -25,9 +26,22 @@ class Solution {
                 j++;
             }
         }
+    }
+}
 
-// 其实优化的地方就是#1处。它避免了数组开头是非零元素的交换也就是阻止（i==j）时交换。
-// 当i > j 时，只需要把 i 的值赋值给j 并把原位置的值置0。同时这里也把交换操作换成了赋值操作，减少了一条操作语句，理论上能更节省时间。
-
+// Option 2
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int zeronums = 0;
+        int i = 0;
+        for(i = 0; i < nums.length; i++) {
+            if(nums[i] == 0) {
+                zeronums++;
+            } 
+            else if(zeronums != 0) {
+                nums[i - zeronums] = nums[i];
+                nums[i] = 0;
+            }
+        }
     }
 }
