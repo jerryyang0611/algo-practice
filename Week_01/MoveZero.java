@@ -29,6 +29,13 @@ class Solution {
     }
 }
 
+1. j记录要填入的非零元素位置，遇到非0元素就挪动到j位置上；
+2. 遍历整个数组，遇到nums[i]==0 时候不处理；如果非0的时候，则把nums[i]的非0元素和nums[j]上的0元素互换，调换位置；
+3. j始终指向的是下一个非0元素；
+
+
+
+
 // Option 2
 class Solution {
     public void moveZeroes(int[] nums) {
