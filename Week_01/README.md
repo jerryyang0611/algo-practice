@@ -22,3 +22,7 @@ Just start reveiwing arraylist and more.
 内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
 #### 空间复杂度：O(1)
 
+6. Valid Parantheses
+-- Use Stack
+
+7. 
