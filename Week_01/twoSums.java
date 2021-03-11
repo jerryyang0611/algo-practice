@@ -60,15 +60,14 @@ class Solution {
         // 2. iterate through the array element
         // --> if (target - nums[i]) is not in the set, put the nums[i] and its element into the set.
 
-        Map<Integer,Integer> hashMap = new HashMap<Integer, Integer>();
-        hashMap.put(nums[0],0);
-        for (int i = 1; i < nums.length; i++) {
-            if (hashMap.containsKey(target - nums[i]))
-                return new int [] {hashMap.get(target-nums[i]), i};
-            else
-                hashMap.put(nums[i], i);    
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] { map.get(complement), i };
+            }
+            map.put(nums[i], i);
         }
-        // return new int [0];
-        throw new IllegalArugmentException("No two sum solution...");
+        throw new IllegalArgumentException("No two sum solution");
     }
 }
