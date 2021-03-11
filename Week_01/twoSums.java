@@ -55,6 +55,20 @@ class Solution {
         // throw new IllegalArgumentException("No such solution..");
         return new int[0];
 
-        // Option 2: HashMap...
+        // Option 2: HashMap..
+        // 1. put the first element and its index 0 into the hash set 
+        // 2. iterate through the array element
+        // --> if (target - nums[i]) is not in the set, put the nums[i] and its element into the set.
+
+        Map<Integer,Integer> hashMap = new HashMap<Integer, Integer>();
+        hashMap.put(nums[0],0);
+        for (int i = 1; i < nums.length; i++) {
+            if (hashMap.containsKey(target - nums[i]))
+                return new int [] {hashMap.get(target-nums[i]), i};
+            else
+                hashMap.put(nums[i], i);    
+        }
+        // return new int [0];
+        throw new IllegalArugmentException("No two sum solution...");
     }
 }
