@@ -28,9 +28,8 @@ Just start reveiwing arraylist and more.
 
 ### 复杂度分析
 
-#### 时间复杂度：O((N - L)L)，其中 N 为 haystack 字符串的长度，L 为 needle 字符串的长度。
-			   内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
-#### 空间复杂度：O(1)
+	#### 时间复杂度：O((N - L)L)，其中 N 为 haystack 字符串的长度，L 为 needle 字符串的长度。内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
+	#### 空间复杂度：O(1)
 
 7. Valid Parantheses  
 -- Use Stack
