@@ -4,11 +4,21 @@ Week 1 Note:
 Just start reveiwing arraylist and more. 
 
 1. MoveZero.java
-2. ContainerWithMostWater.java
-3. ClimbingStairs.java
-4. 3Sum.java
 
-5. ImplementStrStr
+2. ContainerWithMostWater.java
+
+3. ClimbingStairs.java
+-- 1. Fibonacci series (overtime ... dont do this....)
+-- 2. only record the last three nums of steps f1, f2, f3 
+
+4. twoSums.java (easier version of 3Sum) 
+-- 1. double for loop iterate through
+-- 2. Hashmap ...
+
+5. 3Sum.java
+
+
+6. ImplementStrStr
 
 <center>
 <img src="https://pic.leetcode-cn.com/Figures/28/substrings.png">	
@@ -22,7 +32,9 @@ Just start reveiwing arraylist and more.
 内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
 #### 空间复杂度：O(1)
 
-6. Valid Parantheses
+7. Valid Parantheses
 -- Use Stack
 
-7. 
+
+
+
