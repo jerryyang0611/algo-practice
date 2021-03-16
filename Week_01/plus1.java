@@ -44,10 +44,10 @@ class Solution {
         // Option 2.
         for (int i = digits.length - 1; i >= 0; i--) {
             digits[i]++;
-            digits[i] = digits[i] % 10;
+            digits[i] = digits[i] % 10;   // 看看是不是9
             if (digits[i] != 0) return digits;
         }
-        digits = new int[digits.length + 1];
+        digits = new int[digits.length + 1]; // 能到這說明整個digits全是9 所以要進位 直接重新new一個 並把第一位改成1
         digits[0] = 1;
         return digits;
     }
