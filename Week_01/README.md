@@ -34,10 +34,10 @@ Just start reveiwing arraylist and more.
 7. Valid Parantheses  
 -- Use Stack
 
-8. Remove Duplicates from Sorted Array
+8. Remove Duplicates from Sorted Array  
 -- Two pointers 
 
-9. mergeSortedArray
+9. mergeSortedArray  
 -- three pointers (從後面遍歷) in-place, no need extra space
 
 
