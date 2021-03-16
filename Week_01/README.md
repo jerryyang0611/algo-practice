@@ -40,4 +40,5 @@ Just start reveiwing arraylist and more.
 9. mergeSortedArray  
 -- three pointers (從後面遍歷) in-place, no need extra space
 
-
+10. reverseLinkedList  
+> Solution [Solution](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)
