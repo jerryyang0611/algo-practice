@@ -16,7 +16,7 @@ s[i] is a printable ascii character.
  
 Follow up: Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
-// Code
+// Code (Two pointer)
 class Solution {
     public void reverseString(char[] s) {
 	    int n = s.length;
