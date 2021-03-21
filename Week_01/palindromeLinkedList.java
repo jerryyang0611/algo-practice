@@ -54,7 +54,7 @@ class Solution {
 
         // 2. Recursion....
 
-        
+
 
         // 3. slow, fast pointer. reversed the second half of the linkedlist and compare each node through iteration.
         if (head.next == null) return true;
