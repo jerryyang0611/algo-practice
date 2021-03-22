@@ -59,6 +59,11 @@ Just start reveiwing arraylist and more.
 > 2. Recursion
 > 3. Slow, fast pointer. reversed the second half of the linkedlist and compare each node through iteration.
 
-12. [removeLinkedListElement](removeLinkedListElement.java)  
+12. [removeLinkedListElement](./linkedList/removeLinkedListElement.java)  
 > 1. Iteration
 > 2. Recursion
+
+13. [removeDuplicateFromSortedArray](./linkedList/removeDuplicateFromSortedArray.java)
+> 1. Two pointers  
+> 2. Hash Set
+
