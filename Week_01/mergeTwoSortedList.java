@@ -37,6 +37,7 @@ class Solution {
         if (l2 == null) return l1;
         ListNode head = new ListNode(0);  // initialise one prev head
         ListNode curr = head;            // copy another node from the prev head for l1 l2 choosing during each iteration.
+        // 如果不赋值给curr，用prehead代替curr去做迭代的话，那prehead最终指向的是l1或l2的尾节点，相当于没保存合并后链表的头结点。而赋值之后，让curr不断指向合并后最新节点把链表链接起来，prehead.next还是合并后的头结点
         while (l1!= null && l2 != null) { 
             if (l1.val > l2.val) {
                 curr.next = l2;
