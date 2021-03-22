@@ -18,7 +18,7 @@ Week 1 Note:
 5. [3Sum.java](./Array/3Sum.java)
 > 1. two pointers 
 
-6. ImplementStrStr
+6. [ImplementStrStr](./Array/ImplementStrStr.java)
 
 <center>
 <img src="https://pic.leetcode-cn.com/Figures/28/substrings.png">	
