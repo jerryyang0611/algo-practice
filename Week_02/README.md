@@ -3,9 +3,10 @@
 ##### Stack 
 
 1. [ValidParentheses.java](ValidParentheses.java)  
-	> * Brute force (replace the char with "" if the prrentheses are matched.) => time consuming..  
-	> * Use Stack O(N) - 1  
-	> * Use Stack O(N) - 2  
+> 1. Brute force (replace the char with "" if the prrentheses are matched.) => time consuming..  
+> 2. Use Stack O(N) - 1  
+> 3. Use Stack O(N) - 2  
 
+2. 
 
 ##### HashSet
