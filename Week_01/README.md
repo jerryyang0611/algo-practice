@@ -1,22 +1,22 @@
 学习笔记
 Week 1 Note: 
 
-Just start reveiwing arraylist and more. 
+##### Array  
 
-1. MoveZero.java
+1. [MoveZero](./Array/MoveZero.java)
 
-2. ContainerWithMostWater.java
+2. [ContainerWithMostWater](./Array/ContainerWithMostWater.java)
 
-3. ClimbingStairs.java  
--- 1. Fibonacci series (overtime ... dont do this....)  
--- 2. only record the last three nums of steps f1, f2, f3   
+3. [ClimbingStairs](./Array/ClimbingStairs.java)  
+> 1. Fibonacci series (overtime ... dont do this....)  
+> 2. only record the last three nums of steps f1, f2, f3   
 
-4. twoSums.java (easier version of 3Sum)  
--- 1. double for loop iterate through  
--- 2. Hashmap ...  
+4. [twoSums](./Array/twoSums.java) (easier version of 3Sum)  
+> 1. double for loop iterate through  
+> 2. Hashmap ...  
 
-5. 3Sum.java
- - two pointers 
+5. [3Sum.java](./Array/3Sum.java)
+> 1. two pointers 
 
 6. ImplementStrStr
 
@@ -31,16 +31,18 @@ Just start reveiwing arraylist and more.
 	* 时间复杂度：O((N - L)L)，其中 N 为 haystack 字符串的长度，L 为 needle 字符串的长度。内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
 	* 空间复杂度：O(1)
 
-7. Valid Parantheses  
--- Use Stack
+7. [Plus1](./Array/plus1.java)  
+> 1. Math + Array iterate
 
-8. Remove Duplicates from Sorted Array  
--- Two pointers 
+8. [Remove Duplicates from Sorted Array](./Array/removeDuplicateFromSortedArray.java)  
+> Two pointers 
 
-9. mergeSortedArray  
--- three pointers (從後面遍歷) in-place, no need extra space
+9. [mergeSortedArray](./Array/mergeSortedArray.java)  
+> Three pointers (從後面遍歷) in-place, no need extra space
 
-10. reverseLinkedList  
+##### LinkedList
+
+10. [reverseLinkedList](./linkedList/reverseLinkedList.java)  
 > Iteration: [Solution](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)  
 
 ##### 复杂度分析
@@ -54,7 +56,7 @@ Just start reveiwing arraylist and more.
 
 	* 空间复杂度：O(n + m)O(n+m)，其中 nn 和 mm 分别为两个链表的长度。递归调用 mergeTwoLists 函数时需要消耗栈空间，栈空间的大小取决于递归调用的深度。结束递归调用时 mergeTwoLists 函数最多调用 n+mn+m 次，因此空间复杂度为 O(n+m)O(n+m)。
 
-11. PalindromeLinkedList  
+11. [PalindromeLinkedList](./linkedList/palindromeLinkedList.java)  
 > 1. Two pointers, store the linked list in a new arraylist first, then reverse it and compare.
 > 2. Recursion
 > 3. Slow, fast pointer. reversed the second half of the linkedlist and compare each node through iteration.
@@ -63,7 +65,15 @@ Just start reveiwing arraylist and more.
 > 1. Iteration
 > 2. Recursion
 
-13. [removeDuplicateFromSortedArray](./linkedList/removeDuplicateFromSortedArray.java)
+13. [removeDuplicateFromSortedArray](./linkedList/removeDuplicateFromSortedArray.java)  
 > 1. Two pointers  
 > 2. Hash Set
+
+14. [mergeTwoSortedLists](./linkedList/mergeTwoSortedList.java)  
+> 1. 
+> 2. 
+
+15. [printReversedLinkedList](./linkedList/printReversedLinkedList.java)  
+> 1. 
+
 
