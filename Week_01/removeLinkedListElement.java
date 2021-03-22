@@ -30,7 +30,7 @@ The number of nodes in the list is in the range [0, 104].
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
 
-        // 1. Iteration
+        // 1. Iteration  O(N), O(1)
         if (head == null) return head;
         ListNode pre = new ListNode(-1,head);
         ListNode cur = pre;

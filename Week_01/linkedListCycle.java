@@ -39,6 +39,15 @@ public class Solution {
         }
         return false;
 
-        // Option 2: Hash table , but this is not O(1) constant memory.....
-    }
+        // Option 2: Hash table , but O(N), O(N)
+        Set<ListNode> seen = new HashSet<ListNode>();
+        while (head != null) {
+            if (!seen.add(head)) {   // add(E e) 方法用于为指定的元素添加到这个组，如果它是不存在的。如果此set已经包含该元素，则调用设定不变，并返回false。
+                return true;
+            }
+            head = head.next;
+        }
+        return false;
 }
+
+
