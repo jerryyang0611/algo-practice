@@ -1,7 +1,7 @@
 学习笔记
 Week 1 Note: 
 
-##### Array  
+### Array  
 
 1. [MoveZero](./Array/MoveZero.java)
 
@@ -40,7 +40,10 @@ Week 1 Note:
 9. [mergeSortedArray](./Array/mergeSortedArray.java)  
 > Three pointers (從後面遍歷) in-place, no need extra space
 
-##### LinkedList
+* [MaxConsecutive](./Array/MaxConsecutive.java)  
+
+
+### LinkedList
 
 10. [reverseLinkedList](./linkedList/reverseLinkedList.java)  
 > Iteration: [Solution](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)  
@@ -75,5 +78,9 @@ Week 1 Note:
 
 15. [printReversedLinkedList](./linkedList/printReversedLinkedList.java)  
 > 1. 
+
+* [addtoArrayFormofInteger](./Array/addtoArrayFormofInteger.java)
+> LinkedList + Math (要多練。) Mimic hand math plus operation. 
+> / for carry , % for mod...
 
 
