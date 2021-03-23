@@ -43,6 +43,8 @@ Week 1 Note:
 * [MaxConsecutive](./Array/MaxConsecutive.java)  
 
 
+-----------------------------------------------------------------------------------------------------------------
+
 ### LinkedList
 
 10. [reverseLinkedList](./linkedList/reverseLinkedList.java)  
