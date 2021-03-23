@@ -32,10 +32,10 @@ a and b consist of lowercase letters.
 
 class Solution {
     public boolean buddyStrings(String a, String b) {
-        // two pointers.
-        if (a.length() != b.length()) return false;
+
         // edge case
         // consider 'a', 'a' => false & 'aaaaa','aaaaa' => true, 'ababab', 'ababab'    
+        if (a.length() != b.length()) return false;
         
         if (a.equals(b)) {
             Set<Character> unique_chars = new HashSet<>();
