@@ -1,6 +1,3 @@
-学习笔记
-Week 1 Note: 
-
 ### Array  
 
 1. [MoveZero](./Array/MoveZero.java)
