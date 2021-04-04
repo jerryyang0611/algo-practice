@@ -1,4 +1,4 @@
-#### Week 02 -- Stack , HashSet
+#### Week 02 -- Stack , Map/Set
 
 ##### Stack 
 
@@ -9,7 +9,7 @@
 
 2. 
 
-##### HashSet
+##### Map/Set
 
 * [containsNearbyDuplicate](./HashMap/containsNearbyDuplicate.java)
 
