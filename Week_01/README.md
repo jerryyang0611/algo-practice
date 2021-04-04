@@ -42,14 +42,11 @@
 
 * [singleNumber](./Array/singleNumber.java)
 >  XOR operator
+<center>
+<img src="https://user-images.githubusercontent.com/45359868/113499981-11e25c80-954d-11eb-8ca4-2b88ac2e0854.png">	
+</center>
 
 
-* [singleNumber](./Array/singleNumber.java)
->  XOR operator
-
-
-* [singleNumber](./Array/singleNumber.java)
->  XOR operator
 
 -----------------------------------------------------------------------------------------------------------------
 
