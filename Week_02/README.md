@@ -10,3 +10,8 @@
 2. 
 
 ##### HashSet
+
+* [containNearbyDuplicate](./HashSet/containNearbyDuplicate.java)
+
+* [containsDuplicate](./HashSet/containsDuplicate.java)
+
