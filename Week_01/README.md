@@ -38,7 +38,18 @@
 > Three pointers (從後面遍歷) in-place, no need extra space
 
 * [MaxConsecutive](./Array/MaxConsecutive.java)  
+> 
 
+* [singleNumber](./Array/singleNumber.java)
+>  XOR operator
+
+
+* [singleNumber](./Array/singleNumber.java)
+>  XOR operator
+
+
+* [singleNumber](./Array/singleNumber.java)
+>  XOR operator
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -81,5 +92,4 @@
 * [addtoArrayFormofInteger](./Array/addtoArrayFormofInteger.java)
 > LinkedList + Math (要多練。) Mimic hand math plus operation. 
 > / for carry , % for mod...
-
 
