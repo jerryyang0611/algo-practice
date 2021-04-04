@@ -46,6 +46,8 @@ Constraints:
 
 class Solution {
     public int removeElement(int[] nums, int val) {
+
+        // 1.  O(N), O(1)
         int count = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) 
@@ -54,6 +56,17 @@ class Solution {
                 nums[i-count] = nums[i];   // nums[i-count] 相當於把要的元素移到正確位置.
         }
         return nums.length - count;
+
+        // 2.  O(N), O(1)
+        int ans = 0;
+        for(int num: nums) {
+            if(num != val) {
+                nums[ans] = num;
+                ans++;
+            }
+        }
+        return ans;
+
     }
      
 }
