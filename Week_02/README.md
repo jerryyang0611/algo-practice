@@ -2,7 +2,7 @@
 
 ##### Stack 
 
-1. [ValidParentheses.java](ValidParentheses.java)  
+1. [ValidParentheses.java](./Stack/ValidParentheses.java)  
 > 1. Brute force (replace the char with "" if the prrentheses are matched.) => time consuming..  
 > 2. Use Stack O(N) - 1  
 > 3. Use Stack O(N) - 2  
@@ -11,7 +11,7 @@
 
 ##### HashSet
 
-* [containNearbyDuplicate](./HashSet/containNearbyDuplicate.java)
+* [containsNearbyDuplicate](./HashMap/containsNearbyDuplicate.java)
 
-* [containsDuplicate](./HashSet/containsDuplicate.java)
+* [containsDuplicate](./HashMap/containsDuplicate.java)
 
