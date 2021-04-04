@@ -46,8 +46,16 @@ Array
 	<center>
 	<img src="https://user-images.githubusercontent.com/45359868/113499981-11e25c80-954d-11eb-8ca4-2b88ac2e0854.png" width="500">	
 	</center>
+* [findDuplicateNumber](./Array/findDuplicateNumber.java)
+	> Two Pointers (fast & slow)
 
-
+	<details>
+	<summary>Thoughts</summary>
+	<center>
+	<img src="https://user-images.githubusercontent.com/45359868/113513582-fe5ee200-959c-11eb-8bf5-c563c4cdbbd6.png" width="600">	
+	</center>	
+	</details>
+	
 
 -----------------------------------------------------------------------------------------------------------------
 
