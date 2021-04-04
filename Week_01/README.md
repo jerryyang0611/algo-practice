@@ -19,12 +19,12 @@ Array
 6. [ImplementStrStr](./Array/ImplementStrStr.java)
 
 	<center>
-	<img src="https://pic.leetcode-cn.com/Figures/28/substrings.png">	
+	<img src="https://pic.leetcode-cn.com/Figures/28/substrings.png" width="700" >	
 	</center>
 
 	* Option 1 - for loop + substring()
 
-	### 复杂度分析
+	##### 复杂度分析
 
 	* 时间复杂度：O((N - L)L)，其中 N 为 haystack 字符串的长度，L 为 needle 字符串的长度。内循环中比较字符串的复杂度为 L，总共需要比较 (N - L) 次。
 	* 空间复杂度：O(1)
@@ -44,7 +44,7 @@ Array
 * [singleNumber](./Array/singleNumber.java)
 	>  XOR operator
 	<center>
-	<img src="https://user-images.githubusercontent.com/45359868/113499981-11e25c80-954d-11eb-8ca4-2b88ac2e0854.png">	
+	<img src="https://user-images.githubusercontent.com/45359868/113499981-11e25c80-954d-11eb-8ca4-2b88ac2e0854.png" width="500">	
 	</center>
 
 
