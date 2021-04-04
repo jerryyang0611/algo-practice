@@ -1,4 +1,5 @@
-### Array  
+Array
+------
 
 1. [MoveZero](./Array/MoveZero.java)
 
@@ -50,7 +51,8 @@
 
 -----------------------------------------------------------------------------------------------------------------
 
-### LinkedList
+LinkedList
+------
 
 10. [reverseLinkedList](./linkedList/reverseLinkedList.java)  
 	> Iteration: [Solution](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)  
