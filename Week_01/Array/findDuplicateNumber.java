@@ -57,18 +57,15 @@ class Solution {
 
         // 3. Two Pointers
         int fast = 0, slow = 0;
-        while(true){
+        do {
             fast = nums[nums[fast]];
             slow = nums[slow];
-            if(fast == slow)
-                break;
-        }
+        } while (fast != slow);
+        
         int finder = 0;
-        while(true){
+    	while(slow != finder){
             finder = nums[finder];
             slow = nums[slow];
-            if(slow == finder)
-                break;        
         }
         return slow;
 
