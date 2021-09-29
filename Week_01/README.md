@@ -14,8 +14,9 @@ Array
 	> 2. Hashmap ...  
 
 5. [3Sum.java](./Array/3Sum.java)
+	
 	> 1. two pointers 
-
+	
 6. [ImplementStrStr](./Array/ImplementStrStr.java)
 
 	<center>
@@ -30,17 +31,21 @@ Array
 	* 空间复杂度：O(1)
 
 7. [Plus1](./Array/plus1.java)  
+	
 	> 1. Math + Array iterate
-
+	
 8. [Remove Duplicates from Sorted Array](./Array/removeDuplicateFromSortedArray.java)  
+	
 	> Two pointers 
-
+	
 9. [mergeSortedArray](./Array/mergeSortedArray.java)  
+	
 	> Three pointers (從後面遍歷) in-place, no need extra space
 
 * [MaxConsecutive](./Array/MaxConsecutive.java)  
+	
 	> 
-
+	
 * [singleNumber](./Array/singleNumber.java)
 	>  XOR operator
 	<center>
@@ -94,9 +99,11 @@ LinkedList
 	> 2. 
 
 15. [printReversedLinkedList](./linkedList/printReversedLinkedList.java)  
+	
 	> 1. 
 
 * [addtoArrayFormofInteger](./Array/addtoArrayFormofInteger.java)
 	> LinkedList + Math (要多練。) Mimic hand math plus operation. 
 	> / for carry , % for mod...
 
+ 
