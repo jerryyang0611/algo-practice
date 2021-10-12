@@ -29,9 +29,9 @@ Constraints:
 
 class Solution {
     public int climbStairs(int n) {
-        // Find the minimum repetitive pattern (找最近重複子問題，切記別太遠)
+        // Find the minimum repetitive pattern (找最近重複子問題，切記別太遠) // 
 
-        // Option 1: Fibonacci series: f(n) = f(n-1) + f(n-2) --> overtime..... (X)
+        // Option 1: Fibonacci series: f(n) = f(n-1) + f(n-2) --> overtime 超時.. (X)
         // if (n == 0 || n == 1) 
         //     return 1;
         // else    

@@ -57,7 +57,7 @@ class Solution {
         }
         return nums.length - count;
 
-        // 2.  O(N), O(1)
+        // Solution 2-1:  O(N), O(1) --- Two Pointers
         int ans = 0;
         for(int num: nums) {
             if(num != val) {
@@ -67,6 +67,23 @@ class Solution {
         }
         return ans;
 
+        // Solution 2-2:  O(N), O(1) --- Two Pointers
+        int count = 0;  // 紀錄有多少要留下來(也當index)
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != val) {    // 只 care 要留下來的element
+                nums[count++] = nums[i];
+            }
+        }
+        return count;
+
+
+        // int slowIndex = 0;
+        // for (int fastIndex = 0; fastIndex < nums.length; fastIndex++) {
+        //     if (val != nums[fastIndex]) {
+        //         nums[slowIndex++] = nums[fastIndex];
+        //     }
+        // }
+        // return slowIndex;
     }
      
 }

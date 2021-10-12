@@ -26,16 +26,16 @@
 // haystack and needle consist of only lower-case English characters.
 
 
-// Option 1 : indexOf()
+
+// Option 1 : indexOf() (use built-in function)
 class Solution {
     public int strStr(String haystack, String needle) {
-        if (haystack == "") return 0;
         return haystack.indexOf(needle);
     }
 }
 
 
-// Option 2: sliding Windows.
+// Option 2: sliding Windows. (use built-in function: substring())
 class Solution {
   public int strStr(String haystack, String needle) {
     int L = needle.length(), n = haystack.length();
@@ -49,4 +49,46 @@ class Solution {
   }
 }
 
-// Option 3: two pointer...
+class Solution {
+    public int strStr(String haystack, String needle) {
+        for (int i = 0; i < haystack.length()-needle.length()+1; i++){
+            if (haystack.substring(i,i+needle.length()).equals(needle)) return i;
+        }
+        return -1;
+    }
+}
+
+
+// Option 3: brute force. two pointers
+
+class Solution {
+  public int strStr(String haystack, String needle) {
+    for (int i = 0; ; i++) {
+      for (int j = 0; ; j++) {
+        if (j == needle.length()) return i;
+        if (i + j == haystack.length()) return -1;
+        if (needle.charAt(j) != haystack.charAt(i + j)) break;
+      }
+    }
+  }
+}
+
+// or 
+
+class Solution {
+  public int strStr(String haystack, String needle) {
+    if (haystack == null || needle == null)
+      return -1;
+    
+    for (int i = 0; i < haystack.length() - needle.length() + 1; i++){
+      int count = 0;
+      while (count < needle.length() && haystack.charAt(i+count) == needle.charAt(count)){
+          count++;
+      }
+      if (count == needle.length()) return i;
+    }
+    return -1; 
+  }
+}
+
+
