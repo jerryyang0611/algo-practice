@@ -67,6 +67,15 @@ class Solution {
         }
         return ans;
 
+        int index = 0;
+        for (int i = 0; i < nums.length; i++){
+            if (nums[i] == val) {
+                nums[index] = nums[i];
+                index++;
+            }
+        }   
+        return index;
+
         // Solution 2-2:  O(N), O(1) --- Two Pointers
         int count = 0;  // 紀錄有多少要留下來(也當index)
         for (int i = 0; i < nums.length; i++) {

@@ -53,16 +53,16 @@ class Solution {
         // 2.当，p1<0时，将nums[p2]放入p3位置。p2--,p3-- (p1<0 => nums1 前m個都比nums2 前n個大時)
         // 循环结束条件：p2<0 (nums2 原本都比nums1大 全部塞完了就退出，因為nums1原本就是sorted array.)
         
-        // int p1=m-1,p2=n-1,p3=m+n-1;
-        // while(p2 >= 0){
-        //     if(p1 >= 0 && nums1[p1] > nums2[p2]){
-        //         nums1[p3--] = nums1[p1--];
-        //     } else {
-        //         nums1[p3--] = nums2[p2--];
-        //     }
-        // Conditional Operator
-        //     nums1[p--] = (p1 >= 0 && nums1[p1] > nums2[p2]) ? nums2[p1--] : nums1[p2--];
-        // }
+        int p1=m-1,p2=n-1,p3=m+n-1;
+        while(p2 >= 0){
+            if(p1 >= 0 && nums1[p1] > nums2[p2]){
+                nums1[p3--] = nums1[p1--];
+            } else {
+                nums1[p3--] = nums2[p2--];
+            }
+            // Conditional Operator
+            nums1[p--] = (p1 >= 0 && nums1[p1] > nums2[p2]) ? nums2[p1--] : nums1[p2--];
+        }
 
         int p1 = m-1, p2 = n-1, p = m+n-1;  
         while (p2 >= 0) {
@@ -75,9 +75,35 @@ class Solution {
             nums1[p--] = (p1 < 0 || nums1[p1] < nums2[p2]) ? nums2[p2--] : nums1[p1--];
         }  
 
+
+        // 國際站解答 => 從後面iterate回來 把大的依次放進去
+        int tail1 = m - 1, tail2 = n - 1, finished = m + n - 1;
+        while (tail1 >= 0 && tail2 >= 0) {
+            nums1[finished--] = (nums1[tail1] > nums2[tail2]) ? 
+                                 nums1[tail1--] : nums2[tail2--];
+        }
+
+        while (tail2 >= 0) { //only need to combine with remaining nums2
+            nums1[finished--] = nums2[tail2--];
+        }            
+
+
+        // 從後面iterate回來 把大的依次放進去
+        int p1 = m-1, p2 = n-1, k = m+n-1;
+        while(p1>=0 && p2 >=0){
+            if (nums1[p1]>=nums2[p2]) nums1[k--] = nums1[p1--];
+            else nums1[k--] = nums2[p2--];
+        }
+        while (p2>=0) {
+            nums1[k--] = nums2[p2--];
+        }        
+
         // Option 2: use for loop 簡潔版 
         // for( int i = m - 1, j = n - 1, k = m + n - 1; j >= 0; k--){
         //     nums1[k] = i < 0 || nums2[j] > nums1[i] ? nums2[j--] : nums1[i--];
         // }
+
+
+
     }
 }
