@@ -47,5 +47,25 @@ class Solution {
             }
         }
         return slow+1;  // 而索引从0开始，题目要求返回新数组的长度，因此返回slow+1
+
+        // 1-2
+        if (nums.length == 0) return 0;
+        int j = 0;
+        // i is the fast pointer, j is the slow pointer to record which position to put at. 
+        for (int i = 1; i < nums.length; i++){
+            if (nums[i] != nums[j]) nums[++j] = nums[i];
+        }
+        return j+1;
+
+        // 1-3
+        int count = 0; // 用來記錄有多少duplicates
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i-1]==nums[i]) {
+                count++;
+            }else {
+                nums[i-count] = nums[i];  // 扣掉前面有幾個duplicated 過的 移到正確位置上
+            }
+        }
+        return nums.length-count;  // 扣掉總共的duplicate數量
     }
 }

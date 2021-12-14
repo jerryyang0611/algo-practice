@@ -51,9 +51,9 @@ class Solution {
         int count = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == val) 
-                count++;
+                count++;    // 算前面有多少個要刪得元素
             else 
-                nums[i-count] = nums[i];   // nums[i-count] 相當於把要的元素移到正確位置.
+                nums[i-count] = nums[i];   // nums[i-count] 相當於把要的元素移到正確位置. 減去前面已刪除元素個數 往前移
         }
         return nums.length - count;
 
@@ -69,7 +69,7 @@ class Solution {
 
         int index = 0;
         for (int i = 0; i < nums.length; i++){
-            if (nums[i] == val) {
+            if (nums[i] != val) {
                 nums[index] = nums[i];
                 index++;
             }

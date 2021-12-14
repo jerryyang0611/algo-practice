@@ -38,6 +38,25 @@ class Solution {
             curr = tmp; //当前指针后移
         }
         return prev;
+
+
+        // Iteration
+        // 1->2->3->4->5
+        // prev(null) <- 1, 2->3->4->5
+        // null <- 1 <- 2, 3->4->5
+        // null <- 1 <- 2 <- 3, 4->5
+        // null <- 1 <- 2 <- 3 <- 4, 5
+        // null <- 1 <- 2 <- 3 <- 4 <- 5
+
+        ListNode prev = null;   // prev 就是存結果的頭指針
+        while (head!=null) {
+            ListNode next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
+
     }
 }
 
@@ -54,5 +73,17 @@ class Solution {
         head.next.next = head; // 1, 2<-3<-4<-5  => 1 <- 2<-3<-4<-5
         head.next = null; // null <- 1
         return last;  // so the whole list: null<-1<-2<-3<-4<-5 , and return the last node which is the head of the reversed list.
+
+
+        // Recursion
+        // https://www.youtube.com/watch?v=iT1YrvSNtlw&ab_channel=%E5%9B%BE%E7%81%B5%E6%98%9F%E7%90%83TuringPlanet
+        // base case; 
+        if (head == null || head.next == null) return head;
+        ListNode reversed = reverseList(head.next);
+        // 考慮中間狀態 1 -> 2 -> [REVERSED NODES]
+        head.next.next = head; // 把下個REVERSED NODES 的指針指向自己 完成反轉
+        head.next = null;  // 把原本的順向指向切掉
+
+        return reversed;        
     }
 }
